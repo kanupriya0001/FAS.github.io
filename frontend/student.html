@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Student Login</h2>
+    <div id="loginForm">
+        <input type="text" id="student_name" placeholder="Your Name">
+        <input type="email" id="student_email" placeholder="Email">
+        <button onclick="studentLogin()">Login</button>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+        <h2>Select Faculty</h2>
+        <select id="facultySelect" onchange="loadFacultySlots()"></select>
+        <label>Select Date: <input type="date" id="selectedDate" onchange="loadFacultySlots()"></label>
+        <div id="slotsContainer"></div>
+
+        <h3>Notifications</h3>
+        <div id="notifications"></div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

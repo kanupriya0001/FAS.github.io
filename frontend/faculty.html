@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Faculty Login</h2>
+    <div id="loginForm">
+        <input type="number" id="faculty_id" placeholder="Faculty ID">
+        <input type="email" id="faculty_email" placeholder="Email">
+        <button onclick="facultyLogin()">Login</button>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+        <h2>My Slots</h2>
+        <div id="facultySlots"></div>
+
+        <h2>Pending Booking Requests</h2>
+        <div id="bookingRequests"></div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
